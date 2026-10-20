@@ -14,4 +14,21 @@ def controlla_ip():
     except ValueError:
         print("Indirizzo IP non valido!")
 
-controlla_ip()
+
+while True:
+    print("\n--- PYTHON IP CHECKER ---")
+    print("1. Controlla un indirizzo IP")
+    print("2. Esci")
+
+    scelta = input("Scegli un'opzione: ")
+
+    if scelta == "1":
+        controlla_ip()
+
+    elif scelta == "2":
+        print("Programma terminato.")
+        break
+
+    else:
+        print("Scelta non valida!")
+
